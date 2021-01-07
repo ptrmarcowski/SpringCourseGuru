@@ -4,7 +4,7 @@ package ptrmarcowski.springframework.sfgdi.controllers;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import ptrmarcowski.springframework.sfgdi.services.GreetingServiceImpl;
+import ptrmarcowski.springframework.sfgdi.services.ConstructorGreetingService;
 
 class PropertyInjectedControllerTest {
 
@@ -14,7 +14,7 @@ class PropertyInjectedControllerTest {
 	void setUp() {
 		controller = new PropertyInjectedController();
 		
-		controller.greetingService = new GreetingServiceImpl();
+		controller.greetingService = new ConstructorGreetingService();
 	}
 	
 	@Test
